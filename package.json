@@ -1,0 +1,15 @@
+{
+  "name": "birbcore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Brett Houtz",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint-plugin-no-autofix": "^1.2.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
