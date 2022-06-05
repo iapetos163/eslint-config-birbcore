@@ -1,5 +1,5 @@
 {
-  "name": "birbcore",
+  "name": "eslint-config-birbcore",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Brett Houtz",
