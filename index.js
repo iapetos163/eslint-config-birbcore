@@ -3,6 +3,13 @@ module.exports = {
     '@typescript-eslint',
     'no-autofix',
   ],
+  'overrides': [
+    {
+      'files': ['*.test.ts'],
+      'plugins': ['jest'],
+      'extends': ['plugin:jest/recommended'],
+    },
+  ],
   'parser': '@typescript-eslint/parser',
   'rules': {
     'arrow-spacing': 'warn',
