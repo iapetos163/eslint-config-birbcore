@@ -15,6 +15,7 @@ module.exports = {
     'arrow-spacing': 'warn',
     'comma-dangle': ['warn', 'always-multiline'],
     'comma-spacing': 'off',
+    'eqeqeq': 'warn',
     '@typescript-eslint/comma-spacing': 'warn',
     // https://github.com/typescript-eslint/typescript-eslint/issues/1852
     'indent': ['warn', 2, { ignoredNodes: ['VariableDeclaration[declarations.length=0]'] }],
