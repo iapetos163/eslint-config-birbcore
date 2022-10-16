@@ -1,7 +1,10 @@
 {
   "name": "eslint-config-birbcore",
   "version": "1.0.2",
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js"
+  },
   "author": "Brett Houtz",
   "license": "MPL-2.0",
   "dependencies": {
@@ -9,7 +12,8 @@
     "@typescript-eslint/parser": "^5.27.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.5.3",
-    "eslint-plugin-no-autofix": "^1.2.3"
+    "eslint-plugin-no-autofix": "^1.2.3",
+    "eslint-plugin-react": "^7.31.10"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
