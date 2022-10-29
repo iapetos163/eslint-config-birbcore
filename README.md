@@ -7,5 +7,5 @@ My preferred rules for Typescript.
 In your ESLint config:
 
 ```json
-"extends": ["eslint:recommended", "birbcore"],
+"extends": ["birbcore"],
 ```

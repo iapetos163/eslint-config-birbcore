@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-birbcore",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "exports": {
     ".": "./index.js",
     "./react": "./react.js"
@@ -10,6 +10,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-no-autofix": "^1.2.3",

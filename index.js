@@ -1,19 +1,41 @@
 module.exports = {
-  'extends': ['eslint:recommended'],
-  'plugins': [
-    '@typescript-eslint',
-    'no-autofix',
+  extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
   ],
-  'overrides': [
+  plugins: ['@typescript-eslint', 'no-autofix'],
+  parser: '@typescript-eslint/parser',
+  settings: {
+    'import/resolver': {
+      typescript: true,
+    },
+  },
+  overrides: [
     {
-      'files': ['*.test.ts', '**/__mocks__'],
-      'plugins': ['jest'],
-      'extends': ['plugin:jest/recommended'],
+      files: ['*.test.ts', '**/__mocks__'],
+      plugins: ['jest'],
+      extends: ['plugin:jest/recommended'],
     },
   ],
-  'parser': '@typescript-eslint/parser',
-  'rules': {
-    'eqeqeq': 'warn',
+  rules: {
+    eqeqeq: 'warn',
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        alphabetize: {
+          order: 'asc',
+        },
+      },
+    ],
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     'no-var': 'warn',
