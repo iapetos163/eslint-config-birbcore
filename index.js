@@ -40,5 +40,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'warn',
     'no-var': 'warn',
     'no-autofix/prefer-const': 'warn',
+    quotes: ['warn', 'single', { allowTemplateLiterals: false }],
+    'require-await': ['warn'],
   },
 };
