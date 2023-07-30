@@ -20,6 +20,7 @@ module.exports = {
   ],
   rules: {
     eqeqeq: 'warn',
+    'import/no-named-as-default-member': 'off',
     'import/order': [
       'warn',
       {
