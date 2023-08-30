@@ -37,6 +37,7 @@ module.exports = {
         },
       },
     ],
+    '@typescript-eslint/no-misused-promises': 'warn',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     'no-var': 'warn',
